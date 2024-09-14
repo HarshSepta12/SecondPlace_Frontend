@@ -5,7 +5,7 @@ import axios from "axios";
 import RelatedProduct from "./RelatedProduct";
 
 const ProductDetails = () => {
-  const url = "http://localhost:1000/api";
+  const url = "https://secondplaceshoes.onrender.com/api";
   const { id } = useParams();
   const [productDetails, setProductDetails] = useState(null);
   // const [countProduct, setCountProduct] = useState(0);
@@ -40,6 +40,7 @@ const ProductDetails = () => {
               border: "1px solid blue",
               maxHeight: "300px",
               overflow:"hidden",
+              margin: "auto"
             }}
           >
             <img

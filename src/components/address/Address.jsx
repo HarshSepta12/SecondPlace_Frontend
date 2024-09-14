@@ -53,76 +53,83 @@ const Address = () => {
 
   return (
     <div className="container-fluid">
-      <div className={`row  ${styles.address}`}>
+      <div className={`row ${styles.address}`}>
+        <div className={styles.address}>
         <h1 className="text-center">Shipping Address</h1>
-        <div className={`col-sm-8 mx-auto ${styles.formStyle}`}>
+        <div className={`col-12 col-md-8 mx-auto ${styles.formStyle}`}>
           <form onSubmit={handleSubmit}>
             <div className="row">
-              <div className="mb-3 col-sm-4">
+              <div className="mb-3 col-12 col-md-6 col-lg-4">
                 <label className="form-label">Full Name</label>
                 <input
                   type="text"
-                  className="form-control  bg-secondary text-light"
+                  className="form-control bg-secondary text-light"
                   name="fullname"
                   value={formData.fullname}
-                  onChange={(e) => onHandleChange(e)}
+                  onChange={onHandleChange}
+                  required
                 />
               </div>
 
-              <div className="mb-3 col-sm-4">
+              <div className="mb-3 col-12 col-md-6 col-lg-4">
                 <label className="form-label">Country</label>
                 <input
                   type="text"
-                  className="form-control  bg-secondary text-light"
+                  className="form-control bg-secondary text-light"
                   name="country"
                   value={formData.country}
-                  onChange={(e) => onHandleChange(e)}
+                  onChange={onHandleChange}
+                  required
                 />
               </div>
 
-              <div className="mb-3 col-sm-4">
+              <div className="mb-3 col-12 col-md-6 col-lg-4">
                 <label className="form-label">State</label>
                 <input
                   type="text"
                   className="form-control bg-secondary text-light"
                   name="state"
                   value={formData.state}
-                  onChange={(e) => onHandleChange(e)}
+                  onChange={onHandleChange}
+                  required
                 />
               </div>
             </div>
 
             <div className="row">
-              <div className="mb-3 col-sm-4">
+              <div className="mb-3 col-12 col-md-6 col-lg-4">
                 <label className="form-label">City</label>
                 <input
                   type="text"
-                  className="form-control  bg-secondary text-light"
+                  className="form-control bg-secondary text-light"
                   name="city"
                   value={formData.city}
-                  onChange={(e) => onHandleChange(e)}
+                  onChange={onHandleChange}
+                  required
                 />
               </div>
 
-              <div className="mb-3 col-sm-4">
+              <div className="mb-3 col-12 col-md-6 col-lg-4">
                 <label className="form-label">Pincode</label>
                 <input
                   type="number"
-                  className="form-control  bg-secondary text-light"
+                  className="form-control bg-secondary text-light"
                   name="pincode"
                   value={formData.pincode}
-                  onChange={(e) => onHandleChange(e)}
+                  onChange={onHandleChange}
+                  required
                 />
               </div>
 
-              <div className="mb-3 col-sm-4">
+              <div className="mb-3 col-12 col-md-6 col-lg-4">
                 <label className="form-label">Phone Number</label>
                 <input
                   type="number"
                   className="form-control bg-secondary text-light"
                   name="phonenumber"
                   value={formData.phonenumber}
-                  onChange={(e) => onHandleChange(e)}
+                  onChange={onHandleChange}
+                  required
                 />
               </div>
             </div>
@@ -137,7 +144,8 @@ const Address = () => {
                 name="address"
                 rows="3"
                 value={formData.address}
-                onChange={(e) => onHandleChange(e)}
+                onChange={onHandleChange}
+                required
               ></textarea>
             </div>
 
@@ -146,18 +154,22 @@ const Address = () => {
                 Submit
               </button>
             </div>
-           
 
             {address && (
               <div className="text-center mt-2">
-                <button type="button" className="btn btn-warning" 
-                onClick={() => navigate('/checkout')}>
+                <button
+                  type="button"
+                  className="btn btn-warning"
+                  onClick={() => navigate("/checkout")}
+                >
                   Use Old Address
                 </button>
               </div>
             )}
           </form>
         </div>
+        </div>
+        
       </div>
     </div>
   );

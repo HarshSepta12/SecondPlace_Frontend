@@ -9,3 +9,9 @@
      border-bottom-right-radius: 20px;
      padding: 10px;
 }
+
+@media screen and(max-width: 370px) {
+     .address{
+       margin-top: 4rem !important;
+     }
+}
