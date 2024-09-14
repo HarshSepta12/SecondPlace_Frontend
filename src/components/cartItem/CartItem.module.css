@@ -1,0 +1,77 @@
+.heading{
+     margin-top: 6rem;
+     text-align: center;
+}
+.cardStyle{
+     max-width: 100%;
+     margin-top: 2rem !important;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     gap: 12px ;
+     align-items: center;
+}
+.cartItem{
+     border: 1px solid blue;
+     width: 30%;
+}
+
+.cartImg{
+     height: 200px;
+     width: 200px;
+     overflow: hidden;
+ 
+}
+
+.cartImg img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 10px !important;
+}
+.priceQty{
+     margin-top: 6rem !important;
+     display: flex;
+     justify-content: center;
+     gap: 12px ;
+     align-items: center;
+     background-color: #3d3b3b;
+     color: white;
+}
+
+.rowMT{
+     margin-top: 9rem !important;
+}
+@media screen and (max-width: 540px) {
+     .priceQty {
+          margin-top: 12rem !important;
+     }
+     .desc h2, h4{
+          font-size: 14px !important;
+     }
+     .action button {
+          font-size: 15px !important;
+          margin-top: 1rem !important;
+     }
+     .cartImg {
+          object-fit: cover !important;
+          width: 100% !important;
+          height: 100% !important;
+     }
+     .checkoutButton button{
+          font-size: 16px !important;
+     }
+  
+}
+@media screen and (max-width: 340px) {
+     .desc h2, h4{
+          font-size: 12px !important;
+     }
+     .priceQty h2 {
+          font-size: 14px !important;
+     }
+     .action button {
+          font-size: 12px !important;
+         
+     }
+}

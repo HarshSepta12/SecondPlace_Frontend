@@ -1,0 +1,28 @@
+.brandGroup1, .brandGroup2{
+     position: relative;
+}
+.brandPosition{
+     position: absolute;
+     top: 1rem;
+     left: 1rem;
+}
+.shopColor{
+     color: rgb(0, 0, 0);
+     text-decoration-color: black;
+}
+.popularHeading{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 40px;
+}
+
+.products{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     flex-wrap: wrap;
+}
+
+

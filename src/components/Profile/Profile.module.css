@@ -1,0 +1,9 @@
+.marginTop{
+     margin-top: 6rem !important;
+}
+
+@media screen and (max-width: 500px) {
+     .marginTop{
+          margin-top: 10rem !important;
+     }
+}

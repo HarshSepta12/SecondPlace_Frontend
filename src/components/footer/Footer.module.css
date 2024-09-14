@@ -1,0 +1,9 @@
+.footerParent{
+     background-color: rgba(27, 35, 48, 1);
+     padding: 12px;
+     text-align: center;
+     
+}
+.boderr{
+     border: 2px solid red;
+}
