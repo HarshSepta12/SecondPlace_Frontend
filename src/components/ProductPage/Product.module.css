@@ -33,3 +33,9 @@
    border-radius: 8px;
  }
  
+
+ @media screen and(max-width: 370px) {
+  .container{
+    margin-top: 6rem !important;
+  }
+ }

@@ -33,7 +33,8 @@ const Login = () => {
 
   return (
     <div className="container-fluid">
-      <div className={`row ${styles.marginTop}`}>
+      <div className="row">
+      <div className={`col-sm-12 ${styles.marginTop}`}>
         <h1 className="text-center">Login</h1>
         <div className={`col-sm-4 mx-auto mt-5 ${styles.formStyle}`}>
           <form onSubmit={handleSubmit}>
@@ -68,6 +69,8 @@ const Login = () => {
           </form>
         </div>
       </div>
+      </div>
+     
     </div>
   );
 };
