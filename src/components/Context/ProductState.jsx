@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 // import Checkout from "../checkout/Checkout";
 
 const ProductState = (props) => {
-  const url = "https://secondplaceshoes.onrender.com/api/";
+  const url = "https://secondplaceshoes.onrender.com/api";
   const [products, setProduct] = useState([]);
   const [token, setToken] = useState(localStorage.getItem("token") || ""); 
   const [authenticated, setAuthenticated] = useState(!!localStorage.getItem("token"));

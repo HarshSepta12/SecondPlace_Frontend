@@ -35,7 +35,7 @@
  
 
  @media screen and(max-width: 370px) {
-  .container{
+  .mt{
     margin-top: 6rem !important;
   }
  }

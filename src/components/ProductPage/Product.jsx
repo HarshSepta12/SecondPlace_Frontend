@@ -10,7 +10,7 @@ const Product = () => {
   return (
     <div className="container">
       <div className="row mt-5">
-        <div className={`col-sm-12 mt-5 `}>
+        <div className={`col-sm-12 mt-5 ${styles.mt}`}>
           <h1 className="text-center">Buy Anything</h1>
         </div>
       </div>
